@@ -1,0 +1,26 @@
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td { margin: 0; padding: 0; border: 0;}
+html { color: #000; }
+html,body { height: 100%; }
+/*body,button,input,select,textarea { font-size: 12px; font-family: 'Microsoft Yahei','å¾®è½¯é›…é»‘', \5FAE\8F6F\96C5\9ED1,'å®‹ä½“',\5b8b\4f53,arial,'Hiragino Sans GB',Tahoma,Arial,Helvetica; }*/
+ul,ol,li,dl,dd,dt{list-style: none;}
+/*em { font-style: normal; }*/
+a { text-decoration: none; }
+/*a:hover { text-decoration: underline; }*/
+legend { color: #000; }
+fieldset,img { border: 0; }
+label,button { cursor: pointer; }
+
+/*è§£å†³IEå›¾ç‰‡ç¼©æ”¾å¤±çœŸ*/
+img { -ms-interpolation-mode: bicubic; }
+/*æ¸…é™¤æµ®åŠ¨*/
+.clearfix:after { content: ''; display: block; height: 0; clear: both; }
+.clearfix { zoom: 1; }
+.clear { clear: both; }
+/*è¿žç»­è‹±æ–‡ã€æ•°å­—æ¢è¡Œ*/
+.wordwrap { word-break: break-all; word-wrap: break-word; }
+/*å•è¡Œæ–‡å­—è¶…å‡ºæ˜¾ç¤ºçœç•¥å·*/
+.omg{overflow: hidden; text-overflow: ellipsis; white-space:nowrap;}
+input,textarea{
+	outline: none;
+}
