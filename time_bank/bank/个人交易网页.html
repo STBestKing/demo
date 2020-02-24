@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>个人交易</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Medi Cure Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- toggle menu links -->
+<link href="css/component.css" rel="stylesheet" type="text/css"  />
+<!-- //menu links -->
+<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- effect9 links -->
+<link href="css/ihover.css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/swipebox.css">
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<link href='http://fonts.useso.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- start-smoth-scrolling -->
+</head>
+<!-- slide-toggle-menu -->
+<body class="cbp-spmenu-push">
+       <!--top-header-->
+		<!--bottom--><!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+		<script src="js/classie.js"></script>
+		<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				showRightPush = document.getElementById( 'showRightPush' ),
+				body = document.body;
+
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+
+			function disableOther( button ) {
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+				if( button !== 'showRightPush' ) {
+					classie.toggle( showRightPush, 'disabled' );
+				}
+			}
+		</script>
+<!-- banner -->
+
+
+
+
+
+<div class="banner page-head">
+	<div align="center" class="logo">
+	  <h2>时间银行   ——我的交易明细</h2></div>
+      
+      <div class="read text-center">
+      <a href="时间银行网页.html" class="hvr-outline-out button2">时间银行</a>
+       <a href="个人信息网页.html"  class="hvr-outline-out button2">个人信息</a>
+        <a href="个人交易网页.html"  class="hvr-outline-out button2">个人交易</a>
+        <a href="时间银行社区动态.html" class="hvr-outline-out button2">社区动态</a>
+    <a href="服务标准与时间币兑换.html" class="hvr-outline-out button2">时间币兑换</a>
+        <a href="../../首页.html"  class="progress-bar-success">返回首页</a>
+      </div>
+      
+	<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+		<div id="small-dialog" class="mfp-hide">
+			<div class="search-top">
+				<div class="login">
+					<input type="submit" value="">
+					<input type="text" value="Type something..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">		
+				</div>			
+			</div>
+			<script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+			</script>				
+		</div>
+	
+</div>
+<!-- //banner -->
+<!--gallery-starts--> 
+<div class="treatments">
+	<div class="container"> 		
+			<script src="js/jquery.swipebox.min.js"></script> 
+			<script type="text/javascript">
+						jQuery(function($) {
+							$(".swipebox").swipebox();
+						});
+			</script>
+				<div class="view view-sixth">
+                    <a href="images/221.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/221.jpg" alt="" class="img-responsive">
+                    <div class="mask">
+                        <h4>2019年1月4号</h4>
+                        <p>服务对象信息：2号楼一单元王鑫<br/>服务内容：代收快递<br/>获得时间币：10</p>
+                    </div></a>
+                </div>
+                <div class="view view-sixth">
+                    <a href="images/331.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/331.jpg" alt="" class="img-responsive">
+                    <div class="mask">
+                        <h4>2019年1月15号</h4>
+                        <p>服务对象信息：12号楼一单元李雷<br/>服务内容：代买蔬菜<br/>获得时间币：20</p>
+                    </div></a>
+                </div>
+                <div class="view view-sixth">
+                    <a href="images/441.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/441.jpg" alt="" class="img-responsive">
+                    <div class="mask">
+                        <h4>2019年2月5号</h4>
+                        <p>服务对象信息：7号楼一单元韩梅梅<br/>服务内容：浇花<br/>获得时间币：5</p>
+                    </div></a>
+                </div>
+				<div class="view view-sixth">
+                    <a href="images/331.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/331.jpg" alt="" class="img-responsive">
+                    <div class="mask">
+                        <h4>2019年3月7号</h4>
+                        <p>需求：陪同看病<br/>服务人：4号楼5单元赵勤<br/>支出时间币：30</p>
+                    </div></a>
+                </div>
+                <div class="view view-sixth">
+                    <a href="images/221.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/221.jpg" alt="" class="img-responsive">
+                    <div class="mask">
+                       <h4>2019年4月7号</h4>
+                        <p>需求：代买荔枝5斤<br/>服务人：5号楼4单元刘倩<br/>支出时间币：10</p>
+                    </div></a>
+                </div>
+				<div class="view view-sixth">
+                    <a href="images/331.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/331.jpg" alt="" class="img-responsive">
+                    <div class="mask">
+                        <h4>2019年5月7号</h4>
+                        <p>服务对象信息：2号楼一单元刘梅梅<br/>服务内容：洗碗<br/>获得时间币：10</p>
+                    </div></a>
+                </div>
+				<div class="view view-sixth">
+                    <a href="images/441.jpg" class="b-link-stripe b-animate-go  swipebox"  title="Image Title"><img src="images/441.jpg" alt="" class="img-responsive">
+                    <div class="mask">
+                        <h4>2019年5月30号</h4>
+                        <p>服务对象信息：8号楼二单元赵建国<br/>服务内容：做饭<br/>获得时间币：25</p>
+                    </div></a>
+                </div>
+				<div class="clearfix"></div>
+	</div>
+</div>
+<!--gallery-ends--> 
+<!-- contact -->
+<div class="contact-home">
+	<div class="map-home"></div>
+</div>
+<!-- //contact -->
+<!-- copy-right -->
+<div class="copy-right">
+	<div class="container">
+		<p><a target="_blank" href="#">E养天年智能化社区养老服务平台</a></p>
+	</div>
+</div>
+<!-- //copy-right -->
+<!-- Bootstrap core JavaScript-->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<!-- js -->
+		 <script src="js/bootstrap.js"></script>
+	<!-- js -->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+</body>
+</html>

@@ -1,0 +1,379 @@
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ * user_passport.dwt 验证提交
+ */
+$(function(){
+	//注册页面验证
+	$("#registsubmit").click(function(){
+		if($("form[name='formUser']").valid()){
+			mobileRegist();
+		}
+	});
+	//忘记密码验证
+    $("#forgetsubmit").click(function(){
+        if($("form[name='getPhonePassword']").valid()){
+            mobileForgot();
+        }
+    });
+	
+	$("form[name='formUser']").validate({
+		errorPlacement:function(error, element){
+			var error_div = element.parents('div.item').find('div.input-tip');
+			error_div.html("").append(error);
+		},
+		ignore:".ignore",
+		rules:{
+			username :{
+				required : true,
+				maxlength: 15,
+				StringLength: true,
+				remote : {
+					cache: false,
+					async:false,
+					type:'POST',
+					url:'user.php?act=is_registered',
+					data:{
+						username:function(){
+							return $("input[name='username']").val();
+						}
+					}
+				}
+			},
+			password :{
+				required : true,
+				minlength: 6
+			},
+			confirm_password :{
+				required : true,
+				equalTo : "#pwd"
+			},
+			mobile_phone:{
+				required : true,
+				isMobile : true,
+				notequalTo:"#username",
+				remote : {
+					cache: false,
+					async:false,
+					type:'POST',
+					url:'?/user/phone_reg',
+					data:{
+						mobile_phone:function(){
+							return $("input[name='mobile_phone']").val();
+						}
+					}
+				}
+			},
+			captcha:{
+				required : true,
+				remote : {
+					cache: false,
+					async:false,
+					type:'POST',
+					url:'user.php?act=phone_captcha',
+					data:{
+						captcha:function(){
+							return $("input[name='captcha']").val();
+						}
+					},
+					dataFilter:function(data,type){
+						if(data == "false"){
+							$("input[name='captcha']").siblings(".captcha_img").click();
+						}
+						return data;
+					}
+				}
+			},
+			mobile_code :{
+				required : true,
+				remote : {
+					cache: false,
+					async:false,
+					type:'POST',
+					url:'?/user/phone_reg',
+					data:{
+						mobile_code:function(){
+							return $("input[name='mobile_code']").val();
+						},
+						mobile_phone:function(){
+							return $("input[name='mobile_phone']").val();
+						}
+					}
+				}
+			},
+			email:{
+				required : true,
+				email:true,
+				remote : {
+					cache: false,
+					async:false,
+					type:'POST',
+					url:'user.php?act=check_email',
+					data:{
+						email:function(){
+							return $("input[name='email']").val();
+						}
+					}
+				}
+			},
+			mobileagreement : {
+				required : true
+			},
+			send_code : {
+				required : true,
+				remote : {
+					cache: false,
+					async:false,
+					type:'POST',
+					url:'user.php?act=checkd_email_send_code',
+					data:{
+						send_code:function(){
+							return $("input[name='send_code']").val();
+						}
+					}
+				}
+			},
+			sel_question:{
+				required : true
+			},
+			passwd_answer:{
+				required : true
+			}
+		},
+		messages:{
+			username:{
+				required : username_empty,
+				maxlength: msg_un_length,
+				StringLength: username_shorter,
+				remote : msg_un_registered
+			},
+			password :{
+				required : password_empty,
+				minlength : password_shorter
+			},
+			confirm_password :{
+				required : msg_confirm_pwd_blank,
+				equalTo : confirm_password_invalid
+			},
+			mobile_phone:{
+				required : msg_phone_blank,
+				isMobile : mobile_phone_invalid,
+				notequalTo : mobile_phone_username_equalTo,
+				remote : msg_phone_registered
+			},
+			captcha :{
+				required : msg_identifying_code,
+				remote : msg_identifying_not_correct
+			},
+			mobile_code :{
+				required : msg_mobile_code_blank,
+				remote : msg_mobile_code_not_correct
+			},
+			email :{
+				required : msg_email_blank,
+				email : msg_email_format,
+				remote : msg_email_registered
+			},
+			mobileagreement:{
+				required : agreement
+			},
+			send_code :{
+				required : msg_email_code,
+				remote : msg_email_code_not
+			},
+			sel_question :{
+				required : select_password_question
+			},
+			passwd_answer:{
+				required : null_password_question
+			}
+		},
+		success:function(label){
+			label.removeClass().addClass("succeed").html("<i></i>");
+		},
+		onkeyup:function(element,event){
+			var name = $(element).attr("name");
+			
+			var strongRegex = new RegExp("^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g"); 
+			var mediumRegex = new RegExp("^(?=.{7,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g"); 
+		
+			if(name == "password"){
+				if(strongRegex.test($(element).val())){
+					$(element).parents(".item-info").next(".input-tip").html("<div class='strength strengthC'><b></b><span>强</span></div>");
+				}else if(mediumRegex.test($(element).val())){
+					$(element).parents(".item-info").next(".input-tip").html("<div class='strength strengthB'><b></b><span>中</span></div>");
+				}else{
+					$(element).parents(".item-info").next(".input-tip").html("<div class='strength strengthA'><b></b><span>弱</span></div>");
+				}
+			}else if(name == "captcha"){
+				//不可去除，当是验证码输入必须失去焦点才可以验证（错误刷新验证码）
+				return true;
+			}
+		}
+	});
+
+	$("form[name='getPhonePassword']").validate({
+		errorPlacement:function(error, element){
+			var error_div = element.parents('div.item').find('div.input-tip');
+			error_div.html("").append(error);
+		},
+		ignore:".ignore",
+		rules:{
+			password :{
+				required : true,
+				minlength: 6
+			},
+			confirm_password :{
+				required : true,
+				equalTo : "#pwd"
+			},
+			mobile_phone:{
+				required : true,
+				isMobile : true,
+				notequalTo:"#username",
+				remote : {
+					cache: false,
+					async:false,
+					type:'POST',
+					url:'?/forgot/verifiphone',
+					data:{
+						mobile_phone:function(){
+							return $("input[name='mobile_phone']").val();
+						}
+					}
+				}
+			},
+			mobile_code :{
+				required : true,
+				remote : {
+					cache: false,
+					async:false,
+					type:'POST',
+					url:'?/forgot/verification',
+					data:{
+						mobile_phone:function(){
+							return $("input[name='mobile_phone']").val();
+						},
+						mobile_code:function(){
+							return $("input[name='mobile_code']").val();
+						}
+					}
+				}
+			}
+		},
+		messages:{
+			password :{
+				required : password_empty,
+				minlength : password_shorter
+			},
+			confirm_password :{
+				required : msg_confirm_pwd_blank,
+				equalTo : confirm_password_invalid
+			},
+			mobile_phone:{
+				required : msg_phone_blank,
+				isMobile : mobile_phone_invalid,
+				notequalTo : mobile_phone_username_equalTo,
+				remote : msg_phone_not_correct
+			},
+			mobile_code :{
+				required : msg_mobile_code_blank,
+				remote : msg_mobile_code_not_correct
+			}
+		},
+		success:function(label){
+			label.removeClass().addClass("succeed").html("<i></i>");
+		},
+		onkeyup:function(element,event){
+			var name = $(element).attr("name");
+
+			var strongRegex = new RegExp("^(?=.{8,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g");
+			var mediumRegex = new RegExp("^(?=.{7,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
+
+			if(name == "password"){
+				if(strongRegex.test($(element).val())){
+					$(element).parents(".item-info").next(".input-tip").html("<div class='strength strengthC'><b></b><span>强</span></div>");
+				}else if(mediumRegex.test($(element).val())){
+					$(element).parents(".item-info").next(".input-tip").html("<div class='strength strengthB'><b></b><span>中</span></div>");
+				}else{
+					$(element).parents(".item-info").next(".input-tip").html("<div class='strength strengthA'><b></b><span>弱</span></div>");
+				}
+			}else if(name == "captcha"){
+				//不可去除，当是验证码输入必须失去焦点才可以验证（错误刷新验证码）
+				return true;
+			}
+		}
+	});
+
+});
+
+//获取邮箱验证码
+function sendChangeEmail(type){
+	var obj = $("input[name='email']"),
+		email = obj.val(),
+		where = "";
+		
+	if(!type){
+		type = 0;
+	}	
+	
+	if(email != ""){
+		where = "&email=" + email;
+	}else{
+		obj.parents("#code_email").find(".input-tip").html("<label class='error'>" + msg_email_blank + "</label>");
+	}
+
+	Ajax.call( 'user.php?act=user_email_send', 'type=' + type + where, function(result){
+		if(result.replace(/\r\n/g,'') == 'ok'){
+			pbDialog(json_languages.Mailbox_sent,"",1);
+		}
+	} , 'GET', 'TEXT', true, true );
+}
+
+//手机号注册
+function mobileRegist() {
+
+	$.ajax({
+		type: "POST",
+		url: "?/user/phone_reg/ajax/1",
+		data: {mobile_phone: $("#phone-number").val(), password: $("#pwd").val(), mobile_code: $("#mobile_code").val()},//,parityString:$("#phoneCode").val()
+		dataType: "json",
+		success: function (data) {
+			if (data.code == 200) {
+				if (data.newbie == 0) {
+                    pbDialog('已经注册过',"",0,500,100,50);
+				} else if (data.newbie == 1) {
+                    pbDialog('注册成功',"",0,500,100,50);
+                    setTimeout("window.location.href = 'index.php'",1000)
+				}
+			}
+			else {
+                pbDialog(data.msg,"",0,500,100,50);
+			}
+		}
+
+	});
+
+}
+
+//忘记密码验证
+function mobileForgot(){
+	$.ajax({
+		type: "POST",
+		url: "?/forgot/reset/ajax/1",
+		data: {mobile_phone:$("#mobile_phone").val(),password:$("#pwd").val(),mobile_code:$("#mobile_code").val()},//,parityString:$("#phoneCode").val()
+		dataType:"json",
+		success: function(data) {
+			if (data.code == 200) {
+                pbDialog('修改成功',"",0,500,100,50);
+                setTimeout("window.location.href = '?member/login'",1000)
+			}
+			else {
+                pbDialog(data.msg,"",0,500,100,50);
+			}
+		}
+	});
+}
+
+

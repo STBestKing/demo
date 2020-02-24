@@ -1,0 +1,45 @@
+hr, p,body,
+dl, dt, dd, ul, ol, li,
+pre,
+fieldset, button, input, textarea,
+th, td {
+    margin: 0;
+    padding: 0;  }
+
+button, input, select, textarea {
+    font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+code, kbd, pre, samp, tt { font-family: "Courier New", Courier, monospace;}
+small { font-size: 12px;}
+ul, ol, li { list-style: none;}
+a { text-decoration: none; color:#000; }
+a:hover { text-decoration: underline; }
+abbr[title], acronym[title] {  border-bottom: 1px dotted; cursor: help; }
+q:before, q:after { content: '';}
+legend { color: #000; }
+fieldset, img { border: none; }
+
+button, input, select, textarea { font-size: 100%; }
+table { border-collapse: collapse; border-spacing: 0; }
+td,th,caption { font-size:12px; }
+hr { border: none; height: 1px; }
+html { overflow-y: scroll; }
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif;
+}
+
+
+.clearfix:after {content: "\200B"; display: block; height:0; clear:both;}
+.clearfix { *zoom:1; }
+
+.fl{ float:left; }
+.fr{ float:right; }
+
+
+button:focus {
+    outline: -webkit-focus-ring-color auto 0 !important;
+}
