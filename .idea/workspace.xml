@@ -2,177 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82ee4eb8-7cff-420b-99ba-570d13f25b51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/css/css.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/css/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/css/layer(1).css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/css/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/css/swiper-4.3.5.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/image/20190218180430820.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/image/20190314102349904.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/image/20190314142900_35252.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/image/20190314142920_24576.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/js/1067595.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/js/1067595_code.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/js/b.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/js/common.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/js/header.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/js/hm.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/js/jquery-1.11.2.min.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/js/jquery.superslide.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/js/layer.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/js/lxb.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/js/main.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/js/pc_nb.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/js/swiper-4.3.5.min.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/js/url.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/js/v.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/一体化产品/一体化产品.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/css/css.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/css/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/css/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/css/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/css/swiper-4.3.5.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/images/20190318142428_16330.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/images/20190318142433_68815.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/images/20190319091622_34318.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/images/blank.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/images/bottom.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/images/互联网化.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/js/1067595.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/js/1067595_code.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/js/b.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/js/common.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/js/header.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/js/hm.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/js/jquery-1.11.2.min.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/js/jquery.superslide.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/js/layer.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/js/lxb.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/js/main.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/js/pc_nb.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/js/swiper-4.3.5.min.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/js/url.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/js/v.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/互联网化/互联网化.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/养老亮点升级/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/养老亮点升级/css/css.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/养老亮点升级/css/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/养老亮点升级/css/layer(1).css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/养老亮点升级/css/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/养老亮点升级/css/swiper-4.3.5.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/养老亮点升级/images/20190218180430820.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/养老亮点升级/images/20190314102349904.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/养老亮点升级/images/20190314142003_14095.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/养老亮点升级/images/20190314142012_23977.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/养老亮点升级/images/20190314142018_47282.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/养老亮点升级/images/20190314142024_26718.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/养老亮点升级/images/20190314142030_90123.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/养老亮点升级/js/1067595.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/养老亮点升级/js/1067595_code.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/养老亮点升级/js/common.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/养老亮点升级/js/header.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/养老亮点升级/js/hm.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/养老亮点升级/js/jquery-1.11.2.min.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/养老亮点升级/js/jquery.superslide.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/养老亮点升级/js/layer.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/养老亮点升级/js/swiper-4.3.5.min.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/养老亮点升级/js/url.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/养老亮点升级/养老亮点升级.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/css/css.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/css/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/css/layer(1).css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/css/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/css/swiper-4.3.5.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/image/20190218180430820.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/image/20190314102349904.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/image/20190314113033_67002.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/image/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/js/1067595.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/js/1067595_code.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/js/b.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/js/common.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/js/header.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/js/hm.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/js/jquery-1.11.2.min.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/js/jquery.superslide.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/js/layer.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/js/lxb.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/js/main.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/js/pc_nb.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/js/swiper-4.3.5.min.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/js/url.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/js/v.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/政策大力支持/政策大力支持.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/css/css.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/css/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/css/layer(1).css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/css/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/css/swiper-4.3.5.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/images/20190218180430820.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/images/20190318143611_32571.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/images/20190318143618_60127.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/images/20190318143622_81125.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/images/blank.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/images/社区化封面.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/js/1067595.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/js/1067595_code.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/js/b.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/js/common.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/js/header.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/js/hm.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/js/jquery-1.11.2.min.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/js/jquery.superslide.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/js/layer.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/js/lxb.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/js/main.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/js/pc_nb.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/js/swiper-4.3.5.min.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/js/url.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/js/v.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/社区化/社区化.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/css/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/css/css.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/css/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/css/layer(1).css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/css/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/css/swiper-4.3.5.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/image/20190218180430820.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/image/20190318142726_11095.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/image/20190318142726_24790.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/image/20190318142726_55101.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/image/20190318142726_79647.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/image/20190318142726_86014.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/image/20190318142727_33332.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/image/blank.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/image/针对性封面.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/js/1067595.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/js/1067595_code.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/js/b.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/js/common.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/js/header.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/js/hm.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/js/jquery-1.11.2.min.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/js/jquery.superslide.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/js/layer.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/js/lxb.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/js/main.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/js/pc_nb.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/js/swiper-4.3.5.min.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/js/url.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/js/v.js.下载" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index/针对性/针对性.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/checklist/RQO)]0[4){UE%V}%[1%R((H.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/checklist/checklist.html" beforeDir="false" afterPath="$PROJECT_DIR$/medical_care/checklist/checklist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/checklist/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/checklist/css.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/checklist/footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/checklist/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/checklist/header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/checklist/hm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/checklist/jquery-1.11.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/checklist/jquery.superslide.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/checklist/layer(1).css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/checklist/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/checklist/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/checklist/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/checklist/lxb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/checklist/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/checklist/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/checklist/pc_nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/checklist/skin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/checklist/swiper-4.3.5.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/checklist/swiper-4.3.5.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/checklist/top.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/checklist/url.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/checklist/v.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/checklist/yiliaowifi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/health_preservation/老年养生.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_care/medical_consultation/医疗咨询.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,6 +56,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -218,6 +77,12 @@
       <updated>1582370635232</updated>
       <workItem from="1582370637471" duration="7146000" />
       <workItem from="1582542772378" duration="8558000" />
+      <workItem from="1582970649822" duration="292000" />
+      <workItem from="1582971541874" duration="606000" />
+      <workItem from="1583057600167" duration="597000" />
+      <workItem from="1583415646539" duration="16000" />
+      <workItem from="1587272694401" duration="1355000" />
+      <workItem from="1587968820809" duration="4623000" />
     </task>
     <servers />
   </component>
